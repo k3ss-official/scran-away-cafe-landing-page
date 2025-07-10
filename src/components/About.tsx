@@ -1,32 +1,24 @@
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Award, Coffee } from "lucide-react";
-
-const features = [
-  {
-    icon: Heart,
-    title: "Made with Love",
-    description: "Every dish is prepared with care and passion for great food"
-  },
-  {
-    icon: Users,
-    title: "Family Friendly",
-    description: "A welcoming space for families, couples, and solo diners"
-  },
-  {
-    icon: Award,
-    title: "Quality Ingredients",
-    description: "We source the finest local ingredients for our dishes"
-  },
-  {
-    icon: Coffee,
-    title: "Perfect Coffee",
-    description: "Expertly brewed coffee to complement your meal"
-  }
-];
-
+const features = [{
+  icon: Heart,
+  title: "Made with Love",
+  description: "Every dish is prepared with care and passion for great food"
+}, {
+  icon: Users,
+  title: "Family Friendly",
+  description: "A welcoming space for families, couples, and solo diners"
+}, {
+  icon: Award,
+  title: "Quality Ingredients",
+  description: "We source the finest local ingredients for our dishes"
+}, {
+  icon: Coffee,
+  title: "Perfect Coffee",
+  description: "Expertly brewed coffee to complement your meal"
+}];
 export const About = () => {
-  return (
-    <section className="py-16 sm:py-24 bg-muted/30">
+  return <section className="py-16 bg-muted/30 sm:py-[35px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -49,16 +41,13 @@ export const About = () => {
           </div>
           
           <div className="grid grid-cols-2 gap-6">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center p-6 bg-card rounded-lg shadow-soft hover:shadow-warm transition-all duration-300">
+            {features.map((feature, index) => <div key={index} className="text-center p-6 bg-card rounded-lg shadow-soft hover:shadow-warm transition-all duration-300">
                 <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground">{feature.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
