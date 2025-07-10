@@ -73,9 +73,7 @@ export const ReviewsCarousel = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             What Our Customers Say
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it - hear from the people who make ScranAway.Cafe special
-          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Don't just take our word for it - hear from the people who love what we do!</p>
         </div>
 
         {/* Overall Rating */}
