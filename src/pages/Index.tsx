@@ -1,8 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { MenuHighlights } from "@/components/MenuHighlights";
+import { InteractiveMenu } from "@/components/InteractiveMenu";
 import { About } from "@/components/About";
-import { Reviews } from "@/components/Reviews";
+import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -12,12 +12,12 @@ const Index = () => {
       <Navigation />
       <Hero />
       <section id="menu">
-        <MenuHighlights />
+        <InteractiveMenu />
       </section>
       <section id="about">
         <About />
       </section>
-      <Reviews />
+      <ReviewsCarousel />
       <section id="contact">
         <Contact />
       </section>

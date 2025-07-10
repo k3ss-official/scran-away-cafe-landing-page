@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/scranaway-logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,9 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">Scran Away Cafe</h1>
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <img src={logo} alt="ScranAway.Cafe Logo" className="h-10 w-10" />
+            <h1 className="text-2xl font-bold text-primary">ScranAway.Cafe</h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -38,8 +40,8 @@ export const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="default" size="sm">
-              Book Table
+            <Button variant="default" size="sm" className="shadow-cozy">
+              🍴 Order Ahead
             </Button>
           </div>
 
@@ -70,8 +72,8 @@ export const Navigation = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button variant="default" size="sm" className="w-full">
-                  Book Table
+                <Button variant="default" size="sm" className="w-full shadow-cozy">
+                  🍴 Order Ahead
                 </Button>
               </div>
             </div>

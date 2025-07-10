@@ -16,7 +16,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-          Scran Away Cafe
+          ScranAway.Cafe
         </h1>
         <p className="text-xl sm:text-2xl mb-8 animate-slide-up opacity-90 max-w-2xl mx-auto">
           Where every meal is a moment of joy. Fresh, delicious food served with warmth and care.
@@ -24,10 +24,10 @@ export const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up">
           <Button variant="hero" size="lg">
-            View Our Menu
+            🍽️ View Our Menu
           </Button>
-          <Button variant="outline" size="lg">
-            Book a Table
+          <Button variant="outline" size="lg" onClick={() => window.open('tel:02572976', '_self')}>
+            📞 Order Ahead
           </Button>
         </div>
         

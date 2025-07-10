@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Scran Away Cafe</h3>
+            <h3 className="text-2xl font-bold mb-4">ScranAway.Cafe</h3>
             <p className="text-primary-foreground/80 mb-4">
               Where every meal is a moment of joy. Fresh, delicious food served with warmth and care.
             </p>
@@ -49,15 +49,15 @@ export const Footer = () => {
               <a href="#contact" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 Contact
               </a>
-              <a href="#" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Book a Table
+              <a href="tel:02572976" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                📞 Order Ahead
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 Scran Away Cafe. All rights reserved.</p>
+          <p>&copy; 2024 ScranAway.Cafe. All rights reserved.</p>
         </div>
       </div>
     </footer>
