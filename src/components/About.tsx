@@ -37,7 +37,7 @@ export const About = () => {
               A Cozy Corner of Comfort
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At Scrany Way, we believe that great food brings people together. 
+              At Scran Away Cafe, we believe that great food brings people together. 
               Our charming cafe has been serving the community with delicious, 
               freshly prepared meals in a warm and welcoming atmosphere.
             </p>

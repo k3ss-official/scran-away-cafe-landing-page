@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["hello@scranyway.com", "We'd love to hear from you"]
+    details: ["hello@scranaway.com", "We'd love to hear from you"]
   }
 ];
 
@@ -34,7 +34,7 @@ export const Contact = () => {
             Visit Us Today
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We can't wait to welcome you to Scrany Way. Drop by for a delicious meal 
+            We can't wait to welcome you to Scran Away Cafe. Drop by for a delicious meal 
             or get in touch to make a reservation.
           </p>
         </div>
