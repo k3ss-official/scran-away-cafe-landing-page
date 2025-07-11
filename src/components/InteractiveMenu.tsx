@@ -5,81 +5,197 @@ import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 const menuData = {
   breakfast: [{
-    name: "Full English Breakfast",
-    price: "£8.50",
-    description: "Two eggs, bacon, sausage, black pudding, beans, mushrooms, grilled tomato, toast"
+    name: "Scran Away Muffin",
+    price: "£4.95",
+    description: "Our signature breakfast muffin"
   }, {
-    name: "Breakfast Sandwich",
-    price: "£4.50",
-    description: "Bacon or sausage with egg in fresh bread"
+    name: "Egg & Cheese",
+    price: "£3.00",
+    description: "Simple but delicious"
   }, {
-    name: "Vegetarian Breakfast",
-    price: "£7.50",
-    description: "Two eggs, vegetarian sausage, beans, mushrooms, grilled tomato, toast"
+    name: "Egg, Hash Brown & Beans",
+    price: "£4.95",
+    description: "Perfect breakfast combo"
+  }, {
+    name: "Big Breakfast",
+    price: "£6.95",
+    description: "Everything you need to start the day"
+  }, {
+    name: "Egg, Sausage & Hash Brown",
+    price: "£5.25",
+    description: "Classic breakfast combination"
+  }, {
+    name: "Beans, Sausage, Egg",
+    price: "£4.95",
+    description: "Hearty morning meal"
+  }, {
+    name: "Brown Sauce & Fried Egg",
+    price: "£3.25",
+    description: "Simple but tasty"
+  }, {
+    name: "Egg, Hash Brown & Mushrooms",
+    price: "£4.75",
+    description: "Vegetarian friendly option"
   }],
   "cold-sandwiches": [{
-    name: "Ham Salad",
-    price: "£4.50",
+    name: "Ham & Salad",
+    price: "£4.75",
     description: "Fresh ham with crisp salad"
   }, {
-    name: "Cheese Salad",
-    price: "£4.00",
-    description: "Mature cheddar with fresh salad"
+    name: "Egg & Cress",
+    price: "£3.75",
+    description: "Classic egg mayonnaise with fresh cress"
   }, {
-    name: "Tuna Mayo",
+    name: "Cheese & Onion",
+    price: "£3.75",
+    description: "Mature cheddar with onion"
+  }, {
+    name: "Tuna & Sweetcorn",
     price: "£4.50",
-    description: "Chunky tuna with mayonnaise"
+    description: "Chunky tuna with sweetcorn"
   }, {
-    name: "Chicken Salad",
-    price: "£5.00",
-    description: "Tender chicken breast with salad"
+    name: "Chicken & Salad",
+    price: "£4.95",
+    description: "Tender chicken with fresh salad"
+  }, {
+    name: "BLT",
+    price: "£4.75",
+    description: "Bacon, lettuce and tomato"
+  }, {
+    name: "Sausage Roll",
+    price: "£3.75",
+    description: "Homemade sausage roll"
+  }, {
+    name: "Hot Roll",
+    price: "£3.00",
+    description: "Fresh baked roll"
   }],
   "hot-lunch": [{
-    name: "Fish & Chips",
-    price: "£8.50",
-    description: "Fresh cod in crispy batter with hand-cut chips"
+    name: "Kids Beans",
+    price: "£1.50",
+    description: "Perfect portion for little ones"
   }, {
-    name: "Garlic & Herb Chicken",
-    price: "£7.50",
-    description: "Succulent chicken breast with garlic and herbs"
-  }, {
-    name: "Cheese & Onion Toastie",
+    name: "Kid Bites",
     price: "£4.50",
-    description: "Melted cheese with caramelized onions"
+    description: "Child-friendly meal"
   }, {
-    name: "Ham & Cheese Toastie",
-    price: "£5.00",
-    description: "Premium ham with melted cheese"
+    name: "Toasties",
+    price: "£4.25",
+    description: "Grilled cheese & onion or cheese & tomato"
+  }, {
+    name: "Cheese Toastie",
+    price: "£4.25",
+    description: "Classic melted cheese toastie"
+  }, {
+    name: "Cold Sandwiches",
+    price: "£4.50",
+    description: "Selection of fresh cold sandwiches"
+  }, {
+    name: "Paninis",
+    price: "£5.25",
+    description: "Hot pressed Italian sandwich"
+  }, {
+    name: "Jacket Potato",
+    price: "£5.95",
+    description: "Fluffy baked potato with choice of filling"
+  }, {
+    name: "Beans on Toast",
+    price: "£4.25",
+    description: "Classic comfort food"
+  }, {
+    name: "Cheese on Toast",
+    price: "£4.25",
+    description: "Melted cheese on toasted bread"
+  }, {
+    name: "Scrambled Egg on Toast",
+    price: "£4.25",
+    description: "Creamy scrambled eggs"
   }],
   drinks: [{
     name: "Tea",
-    price: "£2.00",
-    description: "Proper brew, just how you like it"
+    price: "£2.70",
+    description: "Proper brew"
   }, {
-    name: "Coffee",
-    price: "£2.50",
-    description: "Freshly ground, smooth and rich"
+    name: "Latte",
+    price: "£2.75",
+    description: "Smooth and creamy"
+  }, {
+    name: "Cappuccino",
+    price: "£2.75",
+    description: "Rich and frothy"
+  }, {
+    name: "Espresso",
+    price: "£2.00",
+    description: "Strong and bold"
+  }, {
+    name: "Latte",
+    price: "£2.75",
+    description: "Coffee with steamed milk"
+  }, {
+    name: "Chai Latte",
+    price: "£3.00",
+    description: "Spiced tea latte"
   }, {
     name: "Hot Chocolate",
     price: "£3.00",
-    description: "Creamy and indulgent"
+    description: "Rich and creamy"
   }, {
-    name: "Cold Drinks",
+    name: "Decaf Coffee",
+    price: "£2.50",
+    description: "All the taste, none of the caffeine"
+  }, {
+    name: "Mocha",
+    price: "£3.25",
+    description: "Coffee and chocolate combined"
+  }, {
+    name: "Tea",
+    price: "£2.70",
+    description: "Traditional British tea"
+  }, {
+    name: "Americano",
+    price: "£2.50",
+    description: "Black coffee with hot water"
+  }, {
+    name: "Orange Juice",
     price: "£1.50",
-    description: "Various soft drinks available"
+    description: "Fresh orange juice"
+  }, {
+    name: "Apple Juice",
+    price: "£1.50",
+    description: "Pure apple juice"
+  }, {
+    name: "Ribena",
+    price: "£1.50",
+    description: "Blackcurrant drink"
+  }, {
+    name: "Water",
+    price: "£1.00",
+    description: "Still or sparkling"
   }],
   "sweet-treats": [{
-    name: "Homemade Cake",
-    price: "£3.50",
-    description: "Daily selection of fresh cakes"
+    name: "Cake",
+    price: "£2.75",
+    description: "Daily selection of homemade cakes"
+  }, {
+    name: "Chocolate Chip Cookies",
+    price: "£2.50",
+    description: "Fresh baked cookies"
   }, {
     name: "Scones",
     price: "£2.50",
     description: "With jam and cream"
   }, {
-    name: "Biscuits",
-    price: "£1.50",
-    description: "Fresh baked daily"
+    name: "Muffins",
+    price: "£2.75",
+    description: "Various flavours available"
+  }, {
+    name: "Brownie",
+    price: "£2.95",
+    description: "Rich chocolate brownie"
+  }, {
+    name: "Flapjack",
+    price: "£2.50",
+    description: "Oaty goodness"
   }]
 };
 const categories = [{
