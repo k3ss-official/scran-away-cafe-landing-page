@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone } from "lucide-react";
-import heroImage from "@/assets/scranaway-storefront.jpg";
+import heroImage from "/lovable-uploads/79bfdbcf-b3ed-4a25-b84d-6dd22d5e1de1.png";
 
 export const Hero = () => {
   return (
