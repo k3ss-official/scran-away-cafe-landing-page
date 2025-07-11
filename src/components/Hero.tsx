@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone } from "lucide-react";
-import heroImage from "@/assets/scranaway-hero.jpg";
+import heroImage from "/lovable-uploads/79bfdbcf-b3ed-4a25-b84d-6dd22d5e1de1.png";
 
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-75 origin-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-black/40" />
