@@ -1,27 +1,31 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import React from 'react';
+import './App.css';
+import Hero from './components/Hero';
+import InteractiveMenu from './components/InteractiveMenu';
+import Reviews from './components/Reviews';
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <Hero />
+      <InteractiveMenu />
+      <Reviews />
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-info">
+            <h3>Scran Away Cafe</h3>
+            <p>Chorley's little secret for good scran</p>
+            <p>73 Bolton Street, PR7 3AG</p>
+            <p>01257 824763</p>
+            <p>Mon-Sat: 7am-3pm, Sun: 8am-2pm</p>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Scran Away Cafe. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
 export default App;
