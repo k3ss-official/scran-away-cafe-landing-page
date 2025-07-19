@@ -1,0 +1,155 @@
+.reviews {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #8B5A3C 0%, #2D1B14 100%);
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #D4774E;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.review-card {
+  position: relative;
+  height: 250px;
+  background: rgba(45, 27, 20, 0.8);
+  border: 2px solid #8B5A3C;
+  padding: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  border-color: #D4774E;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.review-content {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  transition: all 0.5s ease;
+}
+
+.review-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.review-content.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.review-rating {
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+.star.filled {
+  color: #D4774E;
+}
+
+.review-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.review-author {
+  color: #D4774E;
+  font-weight: 600;
+  text-align: right;
+}
+
+.food-showcase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.food-showcase.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.food-showcase.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.food-image {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.food-name {
+  color: #D4774E;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.food-caption {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: 3rem 1rem;
+  }
+
+  .reviews-title {
+    font-size: 2.5rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    height: 200px;
+    padding: 1.5rem;
+  }
+
+  .review-content {
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
