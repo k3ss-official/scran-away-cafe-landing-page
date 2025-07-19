@@ -1,0 +1,138 @@
+.menu {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2D1B14 0%, #8B5A3C 100%);
+  min-height: 80vh;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #D4774E;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 0.8rem 1.5rem;
+  background: rgba(139, 90, 60, 0.6);
+  color: #FFFFFF;
+  border: 2px solid #8B5A3C;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category-btn:hover {
+  background: rgba(139, 90, 60, 0.8);
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: rgba(212, 119, 78, 0.9);
+  border-color: #D4774E;
+  color: #FFFFFF;
+}
+
+.menu-items {
+  display: grid;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: rgba(45, 27, 20, 0.7);
+  border: 1px solid #8B5A3C;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background: rgba(45, 27, 20, 0.9);
+  border-color: #D4774E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  color: #D4774E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.item-description {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 3rem 1rem;
+  }
+
+  .menu-title {
+    font-size: 2.5rem;
+  }
+
+  .category-buttons {
+    gap: 0.5rem;
+  }
+
+  .category-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .item-price {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}
