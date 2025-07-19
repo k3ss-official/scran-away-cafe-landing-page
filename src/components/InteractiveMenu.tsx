@@ -5,197 +5,230 @@ import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 const menuData = {
   breakfast: [{
-    name: "Scran Away Muffin",
-    price: "£4.95",
-    description: "Our signature breakfast muffin"
-  }, {
-    name: "Egg & Cheese",
-    price: "£3.00",
-    description: "Simple but delicious"
-  }, {
-    name: "Egg, Hash Brown & Beans",
-    price: "£4.95",
-    description: "Perfect breakfast combo"
-  }, {
-    name: "Big Breakfast",
+    name: "Full Breakfast",
     price: "£6.95",
-    description: "Everything you need to start the day"
+    description: "2 Bacon, 2 Sausage, Egg, Hash Brown, Beans, Tomato, Mushrooms, Toast"
   }, {
-    name: "Egg, Sausage & Hash Brown",
-    price: "£5.25",
-    description: "Classic breakfast combination"
+    name: "Large Breakfast",
+    price: "£8.95",
+    description: "3 Bacon, 3 Sausage, 2 Egg, 2 Hash Brown, Beans, Tomato, Mushrooms, Toast"
   }, {
-    name: "Beans, Sausage, Egg",
-    price: "£4.95",
-    description: "Hearty morning meal"
+    name: "Half Breakfast",
+    price: "£5.35",
+    description: "1 Bacon, 1 Sausage, Egg, Beans, Toast"
   }, {
-    name: "Brown Sauce & Fried Egg",
-    price: "£3.25",
-    description: "Simple but tasty"
+    name: "Vegetarian Breakfast",
+    price: "£6.95",
+    description: "2 Veg Sausage, 2 Egg, 2 Hash Brown, Beans, Tomato, Mushrooms, Spinach, Toast"
   }, {
-    name: "Egg, Hash Brown & Mushrooms",
-    price: "£4.75",
-    description: "Vegetarian friendly option"
+    name: "Bacon Sandwich",
+    price: "£3.00",
+    description: "Choice of Barm, Toast, Wrap, or GF Bread"
+  }, {
+    name: "Sausage Sandwich",
+    price: "£3.00",
+    description: "Choice of Barm, Toast, Wrap, or GF Bread"
+  }, {
+    name: "Egg Sandwich",
+    price: "£2.50",
+    description: "Choice of Barm, Toast, Wrap, or GF Bread"
+  }, {
+    name: "Bacon & Egg",
+    price: "£3.50",
+    description: "Choice of Barm, Toast, Wrap, or GF Bread"
+  }, {
+    name: "Bacon, Sausage & Egg",
+    price: "£4.00",
+    description: "Choice of Barm, Toast, Wrap, or GF Bread"
+  }, {
+    name: "Scran Away Muffin",
+    price: "£3.30-£3.95",
+    description: "Muffin with choice of fillings"
   }],
   "cold-sandwiches": [{
-    name: "Ham & Salad",
-    price: "£4.75",
-    description: "Fresh ham with crisp salad"
+    name: "Cheese",
+    price: "£5.35",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Egg & Cress",
-    price: "£3.75",
-    description: "Classic egg mayonnaise with fresh cress"
+    name: "Ham",
+    price: "£5.35",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Cheese & Onion",
-    price: "£3.75",
-    description: "Mature cheddar with onion"
+    name: "Tuna Mayo",
+    price: "£5.35",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Tuna & Sweetcorn",
-    price: "£4.50",
-    description: "Chunky tuna with sweetcorn"
+    name: "Egg Mayo",
+    price: "£5.35",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Chicken & Salad",
-    price: "£4.95",
-    description: "Tender chicken with fresh salad"
+    name: "Chicken Tikka",
+    price: "£5.95",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "BLT",
-    price: "£4.75",
-    description: "Bacon, lettuce and tomato"
+    name: "Shredded Chicken",
+    price: "£5.95",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Sausage Roll",
-    price: "£3.75",
-    description: "Homemade sausage roll"
+    name: "Peri Peri",
+    price: "£5.95",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }, {
-    name: "Hot Roll",
-    price: "£3.00",
-    description: "Fresh baked roll"
+    name: "Chicken & Bacon Mix",
+    price: "£5.95",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
+  }, {
+    name: "Prawn Marie",
+    price: "£6.35",
+    description: "Choice of Barm, Wrap, or GF Bread. Includes side salad"
   }],
-  "hot-lunch": [{
-    name: "Kids Beans",
-    price: "£1.50",
-    description: "Perfect portion for little ones"
+  "hot-food": [{
+    name: "Cheese & Onion Panini",
+    price: "£5.25",
+    description: "Comes with Side Salad & Scran Away House Slaw"
   }, {
-    name: "Kid Bites",
-    price: "£4.50",
-    description: "Child-friendly meal"
+    name: "Tuna Melt Panini",
+    price: "£5.75",
+    description: "Comes with Side Salad & Scran Away House Slaw"
   }, {
-    name: "Toasties",
-    price: "£4.25",
-    description: "Grilled cheese & onion or cheese & tomato"
+    name: "Ham & Cheese Panini",
+    price: "£5.75",
+    description: "Comes with Side Salad & Scran Away House Slaw"
+  }, {
+    name: "BBQ Chicken & Cheese Panini",
+    price: "£5.95",
+    description: "Comes with Side Salad & Scran Away House Slaw"
   }, {
     name: "Cheese Toastie",
-    price: "£4.25",
-    description: "Classic melted cheese toastie"
+    price: "£4.95",
+    description: "Includes Side Salad & Coleslaw"
   }, {
-    name: "Cold Sandwiches",
-    price: "£4.50",
-    description: "Selection of fresh cold sandwiches"
+    name: "Ham & Cheese Toastie",
+    price: "£5.50",
+    description: "Includes Side Salad & Coleslaw"
   }, {
-    name: "Paninis",
+    name: "Jacket Potato - Cheese & Beans",
     price: "£5.25",
-    description: "Hot pressed Italian sandwich"
+    description: "Includes salad, house slaw, & 1 filling"
   }, {
-    name: "Jacket Potato",
-    price: "£5.95",
-    description: "Fluffy baked potato with choice of filling"
+    name: "Jacket Potato - Tuna Mayo",
+    price: "£5.35",
+    description: "Includes salad, house slaw, & 1 filling"
   }, {
-    name: "Beans on Toast",
-    price: "£4.25",
-    description: "Classic comfort food"
+    name: "Meat & Potato Pie",
+    price: "£2.10",
+    description: "Traditional homemade pie"
   }, {
-    name: "Cheese on Toast",
-    price: "£4.25",
-    description: "Melted cheese on toasted bread"
+    name: "Steak Pie",
+    price: "£2.20",
+    description: "Traditional homemade pie"
   }, {
-    name: "Scrambled Egg on Toast",
-    price: "£4.25",
-    description: "Creamy scrambled eggs"
+    name: "Pie & Peas with Gravy",
+    price: "£3.50",
+    description: "Classic Northern comfort food"
   }],
   drinks: [{
     name: "Tea",
-    price: "£2.70",
+    price: "£1.50",
     description: "Proper brew"
   }, {
+    name: "Coffee",
+    price: "£2.00",
+    description: "Fresh ground coffee"
+  }, {
     name: "Latte",
-    price: "£2.75",
+    price: "£2.70",
     description: "Smooth and creamy"
   }, {
     name: "Cappuccino",
-    price: "£2.75",
+    price: "£2.70",
     description: "Rich and frothy"
   }, {
     name: "Espresso",
     price: "£2.00",
     description: "Strong and bold"
   }, {
-    name: "Latte",
-    price: "£2.75",
-    description: "Coffee with steamed milk"
-  }, {
-    name: "Chai Latte",
-    price: "£3.00",
-    description: "Spiced tea latte"
-  }, {
     name: "Hot Chocolate",
-    price: "£3.00",
+    price: "£2.70",
     description: "Rich and creamy"
   }, {
-    name: "Decaf Coffee",
-    price: "£2.50",
-    description: "All the taste, none of the caffeine"
-  }, {
     name: "Mocha",
-    price: "£3.25",
+    price: "£2.75",
     description: "Coffee and chocolate combined"
   }, {
-    name: "Tea",
-    price: "£2.70",
-    description: "Traditional British tea"
+    name: "Bottled Water",
+    price: "£1.00",
+    description: "Still water"
   }, {
-    name: "Americano",
-    price: "£2.50",
-    description: "Black coffee with hot water"
+    name: "Cans",
+    price: "£1.00",
+    description: "Various soft drinks"
   }, {
     name: "Orange Juice",
-    price: "£1.50",
+    price: "£2.00",
     description: "Fresh orange juice"
   }, {
     name: "Apple Juice",
-    price: "£1.50",
+    price: "£2.00",
     description: "Pure apple juice"
   }, {
-    name: "Ribena",
-    price: "£1.50",
-    description: "Blackcurrant drink"
-  }, {
-    name: "Water",
-    price: "£1.00",
-    description: "Still or sparkling"
+    name: "Milkshakes",
+    price: "£2.00",
+    description: "Various flavours"
   }],
   "sweet-treats": [{
-    name: "Cake",
-    price: "£2.75",
-    description: "Daily selection of homemade cakes"
-  }, {
-    name: "Chocolate Chip Cookies",
-    price: "£2.50",
-    description: "Fresh baked cookies"
-  }, {
-    name: "Scones",
-    price: "£2.50",
-    description: "With jam and cream"
-  }, {
-    name: "Muffins",
-    price: "£2.75",
-    description: "Various flavours available"
-  }, {
     name: "Brownie",
-    price: "£2.95",
+    price: "£2.75",
     description: "Rich chocolate brownie"
   }, {
     name: "Flapjack",
-    price: "£2.50",
+    price: "£2.75",
     description: "Oaty goodness"
+  }, {
+    name: "Caramel Shortcake",
+    price: "£2.75",
+    description: "Sweet and indulgent"
+  }, {
+    name: "Muffin",
+    price: "£2.75",
+    description: "Various flavours available"
+  }, {
+    name: "Ginger Cake",
+    price: "£2.75",
+    description: "Spiced cake slice"
+  }, {
+    name: "Cherry Bakewell",
+    price: "£2.75",
+    description: "Traditional almond tart"
+  }, {
+    name: "Victoria Sponge",
+    price: "£2.75",
+    description: "Classic sponge cake"
+  }],
+  "salads-boxes": [{
+    name: "Cheese Salad Box",
+    price: "£6.25",
+    description: "Lettuce, cucumber, tomato, beetroot, boiled egg, pasta, coleslaw"
+  }, {
+    name: "Ham Salad Box",
+    price: "£6.25",
+    description: "Lettuce, cucumber, tomato, beetroot, boiled egg, pasta, coleslaw"
+  }, {
+    name: "Tuna Salad Box",
+    price: "£6.25",
+    description: "Lettuce, cucumber, tomato, beetroot, boiled egg, pasta, coleslaw"
+  }, {
+    name: "Chicken Tikka Salad Box",
+    price: "£6.50",
+    description: "Lettuce, cucumber, tomato, beetroot, boiled egg, pasta, coleslaw"
+  }, {
+    name: "Cold Box",
+    price: "£4.50",
+    description: "Sandwich, crisps, choc biscuit, and drink"
+  }, {
+    name: "Kids Hot Lunch Box",
+    price: "£4.50",
+    description: "Choice of Chicken Nuggets or Sausage, plus Chips & Drink"
   }]
 };
 const categories = [{
@@ -207,8 +240,8 @@ const categories = [{
   name: "🥪 Cold Sarnies",
   emoji: "🥪"
 }, {
-  id: "hot-lunch",
-  name: "🍽️ Hot Lunch",
+  id: "hot-food",
+  name: "🍽️ Hot Food",
   emoji: "🍽️"
 }, {
   id: "drinks",
@@ -218,6 +251,10 @@ const categories = [{
   id: "sweet-treats",
   name: "🧁 Sweet Treats",
   emoji: "🧁"
+}, {
+  id: "salads-boxes",
+  name: "🥗 Salads & Boxes",
+  emoji: "🥗"
 }];
 const callCTAs = ["Give us a bell! 📞", "Ring us up! 🔔", "Fancy a chat? Call us! ☎️", "Pick up the phone! 📱", "Drop us a line! 📞"];
 export const InteractiveMenu = () => {
