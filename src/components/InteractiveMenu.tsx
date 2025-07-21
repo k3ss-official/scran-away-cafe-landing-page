@@ -75,9 +75,16 @@ const InteractiveMenu: React.FC = () => {
           ))}
         </div>
 
-        <div className="menu-items">
+        <div className="bento-grid">
           {menuData[activeCategory]?.map((item, index) => (
-            <div key={index} className="menu-item">
+            <div 
+              key={index} 
+              className={`bento-item bento-${activeCategory}`}
+              style={{ 
+                animationDelay: `${index * 0.1}s`,
+                gridArea: `item-${index + 1}`
+              }}
+            >
               <div className="item-info">
                 <h3 className="item-name">{item.name}</h3>
                 {item.description && (

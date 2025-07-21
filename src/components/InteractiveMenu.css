@@ -1,6 +1,6 @@
 .menu {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #2D1B14 0%, #8B5A3C 100%);
+  padding: 2rem 2rem;
+  background: linear-gradient(135deg, #2D1B14 0%, #8B5A3C 50%, #D4774E 100%);
   min-height: 80vh;
 }
 
@@ -13,64 +13,128 @@
   text-align: center;
   font-size: 3rem;
   color: #D4774E;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
 }
 
 .category-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
 .category-btn {
-  padding: 0.8rem 1.5rem;
-  background: rgba(139, 90, 60, 0.6);
+  padding: 1rem 2rem;
+  background: rgba(139, 90, 60, 0.8);
   color: #FFFFFF;
   border: 2px solid #8B5A3C;
-  border-radius: 0;
+  border-radius: 2rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+}
+
+.category-btn:hover::before {
+  left: 100%;
 }
 
 .category-btn:hover {
-  background: rgba(139, 90, 60, 0.8);
-  transform: translateY(-2px);
+  background: rgba(139, 90, 60, 1);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .category-btn.active {
-  background: rgba(212, 119, 78, 0.9);
+  background: linear-gradient(135deg, #D4774E, #B83C3C);
   border-color: #D4774E;
   color: #FFFFFF;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(212, 119, 78, 0.4);
 }
 
-.menu-items {
+.bento-grid {
   display: grid;
-  gap: 1.5rem;
-  animation: fadeIn 0.5s ease-in-out;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  animation: bentoSlide 0.6s ease-out;
 }
 
-.menu-item {
+.bento-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.5rem;
-  background: rgba(45, 27, 20, 0.7);
+  background: rgba(45, 27, 20, 0.8);
   border: 1px solid #8B5A3C;
-  transition: all 0.3s ease;
+  border-radius: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  animation: bentoFadeIn 0.6s ease-out backwards;
 }
 
-.menu-item:hover {
-  background: rgba(45, 27, 20, 0.9);
+.bento-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(212, 119, 78, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: transform 0.6s;
+  opacity: 0;
+}
+
+.bento-item:hover::before {
+  transform: rotate(45deg) translate(100%, 100%);
+  opacity: 1;
+}
+
+.bento-item:hover {
+  background: rgba(45, 27, 20, 1);
   border-color: #D4774E;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px) rotate(1deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.bento-breakfast .bento-item:nth-child(odd) {
+  transform: rotate(-0.5deg);
+}
+
+.bento-breakfast .bento-item:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.bento-paninis .bento-item:nth-child(3n) {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.bento-drinks .bento-item {
+  border-radius: 50% 1rem 50% 1rem;
+}
+
+.bento-treats .bento-item {
+  background: linear-gradient(135deg, rgba(45, 27, 20, 0.8), rgba(139, 90, 60, 0.3));
 }
 
 .item-info {
@@ -97,14 +161,25 @@
   margin-left: 1rem;
 }
 
-@keyframes fadeIn {
+@keyframes bentoSlide {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-50px) scale(0.9);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes bentoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
   }
 }
 

@@ -7,12 +7,17 @@ const Hero: React.FC = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-title">Scran Away Cafe</h1>
-        <p className="hero-subtitle">Chorley's little secret for good scran</p>
-        <p className="hero-tagline">Delicious scran to eat in or grab 'n' dash</p>
+        <p className="hero-subtitle">Chorley's little secret</p>
+        <p className="hero-tagline">Hip vibes, local flavour, proper good scran</p>
         <p className="hero-love">All cooked with love</p>
 
         <div className="hero-buttons">
-          <button className="cta-button primary" onClick={() => window.scrollTo({top: document.querySelector('.menu')?.offsetTop, behavior: 'smooth'})}>
+          <button className="cta-button primary" onClick={() => {
+            const menuElement = document.querySelector('.menu') as HTMLElement;
+            if (menuElement) {
+              window.scrollTo({top: menuElement.offsetTop, behavior: 'smooth'});
+            }
+          }}>
             View Menu
           </button>
           <button className="cta-button secondary" onClick={() => window.open('tel:+441257824763', '_self')}>

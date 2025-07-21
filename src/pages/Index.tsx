@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
-import { Hero } from "@/components/Hero";
-import { InteractiveMenu } from "@/components/InteractiveMenu";
+import Hero from "@/components/Hero";
+import InteractiveMenu from "@/components/InteractiveMenu";
 import { About } from "@/components/About";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { Contact } from "@/components/Contact";
